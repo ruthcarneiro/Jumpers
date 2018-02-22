@@ -1,0 +1,8 @@
+{
+  "name": "clean",
+  "app_id": "df74f76a",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
