@@ -1,16 +1,202 @@
-// http://ionicframework.com/docs/theming/
+@media screen and (min-width: 1400px) {
+    .content > .scroll-content::before {
+        bottom: 0;
+    }
+
+    .content > .scroll-content::after {
+        top: 0;
+    }
+
+    .tirarScroll{
+        .scroll-content {
+            overflow: hidden !important;
+        }
+    }
+}
 
 
-// App Global Sass
-// --------------------------------------------------
-// Put style rules here that you want to apply globally. These
-// styles are for the entire app and not just one component.
-// Additionally, this file can be also used as an entry point
-// to import other Sass files to be included in the output CSS.
-//
-// Shared Sass variables, which can be used to adjust Ionic's
-// default Sass variables, belong in "theme/variables.scss".
-//
-// To declare rules for a specific mode, create a child rule
-// for the .md, .ios, or .wp mode classes. The mode class is
-// automatically applied to the <body> element in the app.
+.split-pane.split-pane-visible > .split-pane-side {
+    max-width: 15% !important;
+    min-width: 330px;
+    border-right: 2px solid #3C023D;
+}
+
+.headerPane {
+
+    ion-navbar {
+      img {
+        height: 40px;
+      }
+    }
+
+    ion-toolbar {
+      background: #3C023D;
+    }
+
+    ion-toolbar .toolbar-background {
+      background: transparent;
+    }
+    
+    .sidemenu-header {
+
+        cursor: pointer;
+
+        background-size: cover;
+        width: 100%;
+        padding: 0px;
+        z-index: 2;
+        color: #fff;
+        border-bottom: 0; 
+
+        .toolbar-content {
+            height: 64px;
+            padding: 8px;
+            border-top: 2px solid #0B8ED6;
+            border-bottom: 2px solid #0B8ED6;
+
+            span {
+                width: 80%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: inline-block;
+            }
+
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 360px;
+                float: left;
+                margin-top: -6px;
+                margin-right: 10px;
+            }
+
+            .perfilInfo {
+                color: #fff;
+                font-family: 'Century Gothic';
+                padding-left: 0;
+                margin-top: 5px;
+                margin-bottom: 7px;
+            }
+
+            ion-avatar {
+                float: right;
+                width: 29px;
+                height: 29px;
+                transform: translateX(-1px) translateY(-39px);
+                z-index: 2;
+                cursor: pointer;
+                font-size: 2em;
+                color: #3C023D;
+            }
+
+            b {
+                display: block;
+            }
+        }
+    }
+}
+
+.imagemQuebraCbc{
+    width: 50px;
+    height: auto;
+}
+
+.fontSegoe{
+    font-family: "Century Gothic";
+
+  .toolbar-title{
+    text-transform: uppercase;
+    font-size: 1.1em;
+  }
+}
+
+.menuTitle{        
+    color: #FFF;
+    font-weight: bold;
+}
+
+.sobreJumpers{
+    margin: 5%;
+    width: 90%;
+    text-align: justify;
+    font-family: "Century Gothic";
+}
+
+.sobreJumpersIntegrantes{
+    margin: 5%;
+    width: 90%;
+    border-top: 2px solid #c6c6c6;
+    font-family: "Century Gothic";
+}
+
+.invalid {
+  font-size: 9pt;
+  color: map_get($colors, "danger");
+}
+
+#sidenav {
+  ion-item-group[sidemenu] {
+    overflow: hidden;
+    display: block;
+    height: 0;
+    transition: height .3s linear;
+    &.visible {
+        height: 300px;
+        // this is just sample value, calculate how much space you need for your menu items
+    }
+  }
+
+  .menuButton{
+     background-color: #f4f4f4;
+     font-size: 15px;
+  }
+
+  .submenu{
+      padding-left: 0px;
+      font-size: 13px;
+  }  
+}
+
+.footer {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    overflow: auto;
+    margin-top: 20px;
+
+    button {
+        float: right;
+    }
+}
+
+.footer button[block] {
+    display: none;
+}
+
+.footer button[right] {
+    display: block;
+}
+
+@media screen and (max-width: 576px) {
+    .footer button[block] {
+        display: block;
+    }
+    .footer button[right] {
+        display: none;
+    }
+}
+
+.cardColor{
+    background-color: #f4f4f4;
+}
+
+.marginRight{
+    margin-right: 2%;
+}
+
+ion-navbar.toolbar {
+    border-top: 2px solid #3C023D;
+    border-bottom: 2px solid #3C023D;
+}
+
+

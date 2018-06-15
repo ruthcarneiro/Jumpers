@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="131.79mm" height="131.79mm" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 131.79 131.79"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#1F1A17;stroke-width:0.0762}
+    .str4 {stroke:#1F1A17;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+    .str3 {stroke:#006BA9;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+    .str2 {stroke:#00B800;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+    .str1 {stroke:#C80B0B;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+    .fil0 {fill:none}
+   ]]>
+  </style>
+ </defs>
+ <g id="Camada_x0020_1" visibility="hidden">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0 str0" width="131.79" height="131.79"/>
+  <g>
+   <path class="fil0 str1" d="M103.894 33.0025c-1.0979,-3.2398 -4.1727,-5.5466 -7.7974,-5.5466l-60.4034 0c-3.6247,0 -6.6445,2.3068 -7.7974,5.5466l-11.4222 32.8925 0 43.9297c0,3.0197 2.4709,5.4915 5.4916,5.4915l5.4906 0c3.0198,0 5.4916,-2.4708 5.4916,-5.4915l0 -5.4916 65.895 0.001 0 5.4916c0,3.0197 2.4708,5.4916 5.4916,5.4916l5.4906 -0.0011c3.0197,0 5.4915,-2.4708 5.4915,-5.4915l0 -43.9297 -11.4221 -32.8925zm-68.2008 54.8578c-4.5577,0 -8.2374,-3.6787 -8.2374,-8.2374 0,-4.5586 3.6797,-8.2363 8.2374,-8.2363 4.5576,0 8.2374,3.6787 8.2374,8.2374 0,4.5587 -3.6798,8.2363 -8.2374,8.2363zm60.4034 0c-4.5577,0 -8.2374,-3.6787 -8.2374,-8.2374 0,-4.5586 3.6787,-8.2373 8.2374,-8.2373 4.5587,0 8.2374,3.6787 8.2374,8.2373 0,4.5587 -3.6787,8.2374 -8.2374,8.2374zm-68.6408 -27.4569l8.2374 -24.7111 60.4034 0.001 8.2374 24.7101 -76.8782 0z"/>
+  </g>
+ </g>
+ <g id="Camada_x0020_2" visibility="hidden">
+  <metadata id="CorelCorpID_1Corel-Layer"/>
+  <g>
+   <polygon class="fil0 str2" points="38.4391,10.9822 38.4391,71.3856 54.9128,71.3866 54.9128,120.808 93.3519,54.9128 71.3866,54.9128 93.3519,10.9832 "/>
+  </g>
+ </g>
+ <g id="Camada_x0020_3" visibility="hidden">
+  <metadata id="CorelCorpID_2Corel-Layer"/>
+  <g>
+   <path class="fil0 str3" d="M90.0762 48.2303l-29.6867 -29.6867 -29.6866 29.6867c-16.3643,16.3643 -16.3643,42.9565 0,59.3208 8.1821,8.1821 18.9344,12.2727 29.6866,12.2727 10.7523,0 21.5045,-4.0916 29.6867,-12.2737 16.3643,-16.3643 16.3643,-42.9565 0,-59.3208l0 0.001zm17.4062 -22.4017l-7.285 -7.285 -7.2849 7.285c-4.0157,4.0157 -4.0157,10.5412 0,14.557 2.0079,2.0078 4.6464,3.0116 7.2849,3.0116 2.6386,0 5.2771,-1.004 7.285,-3.0119 4.0157,-4.0157 4.0157,-10.5413 0,-14.557l0 0.0003z"/>
+  </g>
+ </g>
+ <g id="Camada_x0020_4" visibility="hidden">
+  <metadata id="CorelCorpID_3Corel-Layer"/>
+  <g>
+   <polygon class="fil0 str4" points="53.7372,114.016 53.7372,80.8153 75.8726,80.8153 75.8726,114.016 103.54,114.016 103.54,69.7475 120.14,69.7475 64.8048,19.9445 9.4698,69.7475 26.0695,69.7475 26.0695,114.016 "/>
+  </g>
+ </g>
+ <g id="Camada_x0020_5">
+  <metadata id="CorelCorpID_4Corel-Layer"/>
+  <g>
+   <polygon class="fil0 str4" points="46.9965,91.6271 71.8814,66.6898 46.9965,41.7525 54.6563,34.0908 87.2553,66.6898 54.6563,99.2888 "/>
+  </g>
+ </g>
+</svg>

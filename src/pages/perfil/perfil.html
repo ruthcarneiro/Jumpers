@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-navbar color="azulLogo">
+    <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>    
+
+    <ion-title ion-text color="light" vertical-align="center" class="fontSegoe">PERFIL DO USUÁRIO</ion-title>
+
+    <ion-buttons end>
+      <button ion-button clear (click)="removerFoto()" *ngIf="dados.foto">REMOVER FOTO</button>
+      <button ion-button clear (click)="salvar()">SALVAR</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-card style="margin-top: 3%;">
+        <ion-card-header>
+            <div align="center">
+                <img class="fotoPerfil" [src]="getUserPicture()">
+            </div>
+            <ion-buttons end>
+                <button ion-button outline class="buttonCamera" (click)="file.click()">
+                    <ion-icon ios="ios-camera" md="md-camera"></ion-icon>
+                </button>
+            </ion-buttons>
+            <input #file type="file" accept="image/*" (change)="upload(file.files)" style="visibility: hidden" />
+        </ion-card-header>
+
+        <ion-card-content class="sobreJumpers">
+          <form [formGroup]="myForm">
+              <ion-item>
+                  <ion-label floating>Nome</ion-label>
+                  <ion-input formControlName="nome" maxlength="200" type="text" clearInput></ion-input>
+              </ion-item>
+              <ion-item no-lines *ngIf="!myForm.controls.nome.valid && submitAttempt" class="invalid">
+                  Campo obrigatório.
+              </ion-item>
+
+              <ion-item>
+                  <ion-label floating>Data de Nascimento</ion-label>
+                  <ion-input formControlName="dataNascimento" maxlength="10" type="text" [brmasker]="datemask" clearInput></ion-input>
+              </ion-item>
+              <ion-item no-lines *ngIf="!myForm.controls.dataNascimento.valid && submitAttempt" class="invalid">
+                  Campo obrigatório.
+              </ion-item>
+
+              <ion-item>
+                  <ion-label floating>E-Mail</ion-label>
+                  <ion-input formControlName="email" maxlength="200" type="text" clearInput></ion-input>
+              </ion-item>
+              <ion-item no-lines *ngIf="!myForm.controls.email.valid && submitAttempt" class="invalid">
+                  Campo obrigatório.
+              </ion-item>
+
+              <ion-item>
+                  <ion-label floating>Telefone</ion-label>
+                  <ion-input formControlName="telefone" maxlength="15" type="text" [brmasker]="masktelefone" clearInput></ion-input>
+              </ion-item>
+              <ion-item no-lines *ngIf="!myForm.controls.telefone.valid && submitAttempt" class="invalid">
+                  Campo obrigatório.
+              </ion-item>                         
+            </form>        
+        </ion-card-content>
+    </ion-card>
+</ion-content>

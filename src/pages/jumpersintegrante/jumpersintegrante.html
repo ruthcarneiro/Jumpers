@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar color="azulLogo">
+    <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    
+    <ion-title ion-text color="light" vertical-align="center" class="fontSegoe">QUERO PARTICIPAR SENDO UM JUMPERS</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="cardColor">
+    <div class="textoJumpers">
+        <h2>Como faço para ser um Jumper?</h2>
+        <p>Olá, você precisa realizar este breve cadastro, para que assim possamos contar com você. Os dados são mínimos para que possamos nos comunicar. </p>
+        <p>Além do mais, os integrantes Jumpers tem uma aba a mais no menu, onde ele pode sugerir ações a serem realizadas ou projetos a serem apoiados. </p>
+    </div>
+
+    <ion-card class="sobreJumpers">
+      <form [formGroup]="myForm" class="marginRight">            
+            <ion-item>
+                <ion-label floating>Nome</ion-label>
+                <ion-input formControlName="nome" maxlength="200" type="text" [(ngModel)]='dados.nome' clearInput></ion-input>
+            </ion-item>
+            <ion-item no-lines *ngIf="!myForm.controls.nome.valid && submitAttempt" class="invalid">
+                Campo obrigatório.
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>Data de Nascimento</ion-label>
+                <ion-input formControlName="dataNascimento" maxlength="10" type="text" [brmasker]="datemask" [(ngModel)]='dados.dataNascimento' clearInput></ion-input>
+            </ion-item>
+            <ion-item no-lines *ngIf="!myForm.controls.dataNascimento.valid && submitAttempt" class="invalid">
+                Campo obrigatório.
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>E-Mail</ion-label>
+                <ion-input formControlName="email" maxlength="200" type="text" [(ngModel)]='dados.email' clearInput></ion-input>
+            </ion-item>
+            <ion-item no-lines *ngIf="!myForm.controls.email.valid && submitAttempt" class="invalid">
+                Campo obrigatório.
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>Telefone</ion-label>
+                <ion-input formControlName="telefone" maxlength="15" type="text" [brmasker]="masktelefone" [(ngModel)]='dados.telefone' clearInput></ion-input>
+            </ion-item>
+            <ion-item no-lines *ngIf="!myForm.controls.telefone.valid && submitAttempt" class="invalid">
+                Campo obrigatório.
+            </ion-item>             
+
+            <div padding class="footer">
+                <button ion-button outline right show-when="large" color="azulLogo"
+                        id="btnSend" type="submit" (click)="send()">SALVAR
+                </button>
+                <button ion-button outline block show-when="small" color="azulLogo"
+                        id="btnSend" type="submit" (click)="send()">SALVAR
+                </button>
+            </div>
+        </form>        
+    </ion-card>  
+</ion-content>

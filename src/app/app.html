@@ -1,1 +1,39 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-split-pane>
+    <ion-menu when="xs" [content]="content" class="tirarScroll">
+    <ion-header class="headerPane">
+        <ion-navbar color="azulLogo" class="fontSegoe no-border" (click)="goHome();">
+            <ion-title text-center class="menuTitle fontSegoe">JUMPERS<img class="imagemQuebraCbc" src="assets/logo_palhaco_azul.jpg">ALEGRIA</ion-title>
+        </ion-navbar> 
+    </ion-header>
+
+    <ion-content class="fontSegoe no-border">
+        <ion-list id="sidenav" class="cardColor fontSegoe">
+            <b ion-item menuClose class="menuButton"><strong>AÇÕES</strong></b>
+            <ion-item-group submenu [class.visible]="showSubmenu">
+                <ion-item no-lines submenu-item class="submenu" (click)="acoesRealizadas()" menuClose><ion-avatar item-left><img style="margin-left: 10px; width: 35px; height: auto; margin-top: 3px;" src="assets/logo_palhaco_pt_branco.jpg"></ion-avatar>AÇÕES PASSADAS</ion-item>
+                <ion-item no-lines submenu-item class="submenu" (click)="acoesRealizadasFuturas()" menuClose><ion-avatar item-left><img style="margin-left: 10px; width: 35px; height: auto; margin-top: 3px;" src="assets/logo_palhaco_pt_branco.jpg"></ion-avatar>AÇÕES FUTURAS</ion-item>
+                <ion-item submenu-item class="submenu" (click)="acoesRealizadasSugerir()" menuClose><ion-avatar item-left><img style="margin-left: 10px; width: 35px; height: auto; margin-top: 3px;" src="assets/logo_palhaco_pt_branco.jpg"></ion-avatar>SUGERIR AÇÕES</ion-item>
+            </ion-item-group>
+
+            <b ion-item menuClose class="menuButton"><strong>GALERIA</strong></b>
+            <ion-item-group submenu [class.visible]="showSubmenu">                
+                <ion-item submenu-item no-lines class="submenu" (click)="galeria()" menuClose><ion-avatar item-left><img style="margin-left: 10px; width: 35px; height: auto; margin-top: 3px;" src="assets/logo_palhaco_pt_branco.jpg"></ion-avatar>FOTOS DO PROJETO</ion-item>
+            </ion-item-group>
+
+            <b ion-item menuClose class="menuButton"><strong>QUEM SOMOS</strong></b>
+            <ion-item-group submenu [class.visible]="showSubmenu">                
+                <ion-item no-lines submenu-item class="submenu" (click)="nossaHistoria()" menuClose><ion-avatar item-left><img style="margin-left: 10px; width: 35px; height: auto; margin-top: 3px;" src="assets/logo_palhaco_pt_branco.jpg"></ion-avatar>CONHEÇA MAIS SOBRE</ion-item>
+                <ion-item no-lines submenu-item class="submenu" (click)="nossaEquipe()" menuClose><ion-avatar item-left><img style="margin-left: 10px; width: 35px; height: auto; margin-top: 3px;" src="assets/logo_palhaco_pt_branco.jpg"></ion-avatar>CONHEÇA NOSSA EQUIPE</ion-item>
+            </ion-item-group>
+
+            <b ion-item menuClose class="menuButton"><strong>QUERO PARTICIPAR</strong></b>
+            <ion-item-group submenu [class.visible]="showSubmenu">
+                <ion-item submenu-item no-lines class="submenu" (click)="osJumpers()" menuClose><ion-avatar item-left><img style="margin-left: 10px; width: 35px; height: auto; margin-top: 3px;" src="assets/logo_palhaco_pt_branco.jpg"></ion-avatar>QUERO SER UM DOADOR</ion-item>
+                <ion-item submenu-item no-lines class="submenu" (click)="osJumpersIntegrante()" menuClose><ion-avatar item-left><img style="margin-left: 10px; width: 35px; height: auto; margin-top: 3px;" src="assets/logo_palhaco_pt_branco.jpg"></ion-avatar>QUERO SER UM JUMPERS</ion-item>
+            </ion-item-group>           
+        </ion-list>        
+    </ion-content>
+</ion-menu>
+
+<ion-nav [root]="rootPage" main #content></ion-nav> 
+</ion-split-pane>

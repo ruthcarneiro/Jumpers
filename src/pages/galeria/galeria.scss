@@ -1,0 +1,65 @@
+page-galeria {
+    .textMargin{
+        padding-top: 20px !important; 
+    }  
+
+    .imagemLogo{
+        width: 50px;
+        height: auto;
+        float: right;
+        margin-top: -40px;
+        margin-right: 20px;
+    }
+
+    .sobreJumpersIntegrantes{
+        border-top: 0;
+    }
+
+    .imagem{
+        
+        img{text-align: center;}
+
+        p{text-align: right;}
+
+        max-width: 45%;
+        margin-right: 2%;
+        margin-left: 3%;
+    }
+
+    .imagens{
+        
+        img{text-align: center;}
+
+        p{text-align: right;}
+
+        max-width: 45%;
+        margin-right: 2%;
+        margin-left: 3%;
+        margin-top: 5%;
+    }
+
+    @media screen and (max-width: 600px) {
+        .imagem{
+        
+        img{text-align: center;}
+
+        p{text-align: right;}
+
+        max-width: 95%;
+        margin-right: 2%;
+        margin-left: 3%;
+    }
+
+    .imagens{
+        
+        img{text-align: center;}
+
+        p{text-align: right;}
+
+        max-width: 95%;
+        margin-right: 2%;
+        margin-left: 3%;
+        margin-top: 5%;
+    }
+    }
+}

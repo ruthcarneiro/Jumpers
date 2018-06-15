@@ -1,0 +1,61 @@
+﻿<ion-header>
+  <ion-navbar color="azulLogo">
+    <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    
+    <ion-title ion-text color="light" vertical-align="center" class="fontSegoe">AÇÕES A SEREM SUGERIDAS</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="cardColor">
+    <div class="textoJumpers">
+        <h2>Algumas informações,</h2>
+        <p>Antes de sugerir, gostariamos de informar que este é um projeto sério, e que cada sugestão passará por uma avaliação de nossos integrantes. 
+            Caso sua sugestão seja aprovada, entraremos em contato para obter maiores informações e colocarmos em prática novas ações.</p>
+        <p>Desde já, agradecemos sua colaboração, toda ajuda é bem vinda.</p>
+    </div>
+
+    <ion-card class="sobreJumpers">
+            <form [formGroup]="myForm" class="marginRight">            
+                <ion-item>
+                    <ion-label floating>Seu E-Mail</ion-label>
+                    <ion-input formControlName="email" maxlength="80" type="text" [(ngModel)]='dados.email' clearInput></ion-input>
+                </ion-item>
+                <ion-item no-lines *ngIf="!myForm.controls.email.valid && submitAttempt" class="invalid">
+                    Campo obrigatório.
+                </ion-item>
+
+                <ion-item>
+                    <ion-label floating>Seu Telefone</ion-label>
+                    <ion-input formControlName="telefone" maxlength="15" type="text" [(ngModel)]='dados.telefone' [brmasker]="masktelefone" clearInput></ion-input>
+                </ion-item>
+                <ion-item no-lines *ngIf="!myForm.controls.telefone.valid && submitAttempt" class="invalid">
+                    Campo obrigatório.
+                </ion-item>
+
+                <ion-item>
+                    <ion-label floating>Local da ação</ion-label>
+                    <ion-input formControlName="local" maxlength="100" type="text" [(ngModel)]='dados.local' clearInput></ion-input>
+                </ion-item>
+                <ion-item no-lines *ngIf="!myForm.controls.local.valid && submitAttempt" class="invalid">
+                    Campo obrigatório.
+                </ion-item>
+
+                <ion-item>
+                    <ion-label floating>Breve resumo sobre a sugestão</ion-label>
+                    <ion-textarea formControlName="resumo" rows="5" maxLength="3000" [(ngModel)]='dados.resumo' clearInput></ion-textarea>
+                </ion-item>
+
+            <div padding class="footer">
+                <button ion-button outline right show-when="large" color="azulLogo"
+                        id="btnSend" type="submit" (click)="send()">SALVAR
+                </button>
+                <button ion-button outline block show-when="small" color="azulLogo"
+                        id="btnSend" type="submit" (click)="send()">SALVAR
+                </button>
+            </div>
+
+            </form>
+    </ion-card>
+</ion-content>

@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar color="azulLogo">
+    <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    
+    <ion-title ion-text color="light" vertical-align="center" class="fontSegoe">AÇÕES JÁ REALIZADAS</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="cardColor">  		
+  <ion-card class="cardLayout">
+    <div class="row">
+				<div class="col-xs-12 col-sm-8 col-md-8 componente">
+          <ion-card-content>
+              <label-generator [data]="dataset"></label-generator>
+          </ion-card-content>
+				</div>
+        <div class="col-xs-12 col-sm-4 col-md-4 imagem">
+          <img src="assets/galeria4.jpg">
+				</div>
+    </div>
+  </ion-card>
+  <ion-card class="cardLayout">
+      <ion-card-content>
+          <label-generator [data]="dataset2"></label-generator>
+      </ion-card-content>
+  </ion-card>  
+</ion-content>

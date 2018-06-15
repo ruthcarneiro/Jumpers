@@ -1,0 +1,10 @@
+<ion-grid>
+  <ion-row *ngFor="let rows of data">
+      <ion-col *ngFor="let cols of rows">
+        <ion-item no-lines [ngClass]="getPropClassName(cols.props)" (click)="executeClick(cols.props);" text-wrap>
+          <h2 style="font-family: Century Gothic"><strong>{{cols.title}}</strong></h2>
+          <p style="text-align: justify; padding-top: 10px;font-family: Century Gothic">{{cols.descricao}}</p>
+        </ion-item>
+      </ion-col>
+  </ion-row>
+</ion-grid>

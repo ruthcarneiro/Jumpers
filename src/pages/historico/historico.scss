@@ -1,0 +1,41 @@
+page-historico {
+    .textMargin{
+        padding-top: 20px !important; 
+    }
+
+    h3, h5{
+        font-family: "Century Gothic";
+    }
+    img{
+        max-width: 100%;
+        border: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .imagemLogo{
+        width: 50px;
+        height: auto;
+        float: right;
+        margin-top: -40px;
+        margin-right: 20px;
+    }
+
+    .imagens{
+        text-align: center;
+        max-width: 30%;
+        margin-top: 5%;
+    }
+
+    .conteudo{
+            text-align: justify;
+            max-width: 100%;
+        }
+
+    .imagens3{
+        text-align: center;
+        max-width: 100%;
+        margin-right: 3%;
+        margin-top: 2%;
+    }
+}

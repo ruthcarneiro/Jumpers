@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar color="azulLogo">
+    <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    
+    <ion-title ion-text color="light" vertical-align="center" class="fontSegoe">AÇÕES A SEREM REALIZADAS</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="cardColor">
+  <p *ngIf="!dataset" style="text-align: center; padding: 10%; font-family: Century Gothic;">INFELIZMENTE NÃO POSSUÍMOS NENHUMA AÇÃO FUTURA AINDA CADASTRADA.</p>
+  <ion-card class="cardLayout" *ngIf="dataset">      
+      <ion-card-content>
+          <label-generator [data]="dataset"></label-generator>
+      </ion-card-content>
+  </ion-card>  
+</ion-content>

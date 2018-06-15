@@ -1,0 +1,32 @@
+page-acoessugerir {
+    .textMargin{
+        padding-top: 20px !important; 
+    }  
+
+    .imagemLogo{
+        width: 50px;
+        height: auto;
+        float: right;
+        margin-top: -40px;
+        margin-right: 20px;
+    }
+
+    .textoJumpers{
+        margin-right: 10%;
+        margin-left: 10%;
+        margin-top: 5%;
+        padding-bottom:2%;
+        width: 80%;
+        text-align: justify;
+        font-family: "Century Gothic";
+    }
+
+    .sobreJumpers{
+        margin-top: 3%;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        border-bottom: 2px solid #0B8ED6;
+        border-right: 2px solid #0B8ED6;
+    }
+}

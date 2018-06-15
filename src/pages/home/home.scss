@@ -1,3 +1,24 @@
 page-home {
+    h1, p{font-family: "Century Gothic";}
+    .textMargin{
+        padding-top: 20px !important; 
+    }  
 
+    .imagemLogo{
+        width: 50px;
+        height: auto;
+        float: right;
+        margin-top: -40px;
+        margin-right: 20px;
+    }
+    
+    .imageHome{
+        //margin: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    .semear{
+        float: right;
+    }
 }

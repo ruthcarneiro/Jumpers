@@ -1,0 +1,106 @@
+page-equipe {
+    .textMargin{
+        padding-top: 20px !important; 
+    }  
+
+    .imagemLogo{
+        width: 50px;
+        height: auto;
+        float: right;
+        margin-top: -40px;
+        margin-right: 20px;
+    }
+
+    .imagem{
+        
+        img{text-align: center;}
+
+        p{text-align: justify; margin-right: 20px;}
+
+        max-width: 45%;
+        margin-right: 2%;
+        margin-left: 3%;
+    }
+
+    .imagens{
+        
+        img{text-align: center;}
+
+        p{text-align: justify; margin-right: 20px;}
+
+        max-width: 45%;
+        margin-right: 2%;
+        margin-left: 3%;
+        margin-top: 5%;
+    }
+
+    .imagens1{
+            
+            img{text-align: center;}
+
+        p{text-align: justify; margin-right: 20px;}
+
+        max-width: 45%;
+        margin-right: 2%;
+        margin-left: 3%;
+        margin-top: 5%;
+    }
+
+
+    @media screen and (min-width: 1560px) {
+        .imagens1{
+            
+            img{text-align: center; padding-left: 5%;}
+
+            p{text-align: justify; margin-right: 20px; padding-left: 10%;}
+
+            max-width: 45%;
+            margin-right: 2%;
+            margin-left: 3%;
+            margin-top: 5%;
+        }
+    }
+
+    @media screen and (min-width: 1700px) {
+        .imagens1{
+            
+            img{text-align: center; padding-left: 10%;}
+
+            p{text-align: justify; margin-right: 20px; padding-left: 18%;}
+
+            max-width: 45%;
+            margin-right: 2%;
+            margin-left: 6%;
+            margin-top: 5%;
+        }
+    }
+
+    .sobreJumpersIntegrantes{
+        border-top: 0;
+    }
+
+    @media screen and (max-width: 600px) {
+        .imagem{
+        
+        img{text-align: center;}
+
+        p{text-align: justify;}
+
+        max-width: 95%;
+        margin-right: 2%;
+        margin-left: 3%;
+    }
+
+    .imagens{
+        
+        img{text-align: center;}
+
+        p{text-align: justify;}
+
+        max-width: 95%;
+        margin-right: 2%;
+        margin-left: 3%;
+        margin-top: 5%;
+    }
+    }
+}
